@@ -39,33 +39,33 @@ default:
       #     - values-base.yaml          
       #     - values-{{ $.Values.profile }}-{{ $.Values.envName }}.yaml
 
-projects:
+projects: {}
 
-  cert-manager:
-    description: 'cert manager deployment'
-    sourceRepos:
-    - git@github.com:paas2/cert-manager.git
-    destinations:
-    - namespace: cert-manager
-      server: https://kubernetes.default.svc  
-    - namespace: kube-system
-      server: https://kubernetes.default.svc  
+  # cert-manager:
+  #   description: 'cert manager deployment'
+  #   sourceRepos:
+  #   - git@github.com:paas2/cert-manager.git
+  #   destinations:
+  #   - namespace: cert-manager
+  #     server: https://kubernetes.default.svc  
+  #   - namespace: kube-system
+  #     server: https://kubernetes.default.svc  
 
     # extraFields: |
     #   clusterResourceWhitelist:
     #   - group: '*'
     #     kind: '*'                       
 
-applications:
-  cert-manager:
-    enabled: false
-    destination:
-      namespace: null
-      server: null
-    project: cert-manager
-    source:
-      path: helm-charts/cert-manager
-      repoURL: git@github.com:paas2/cert-manager.git   
+applications: {}
+  # cert-manager:
+  #   enabled: false
+  #   destination:
+  #     namespace: null
+  #     server: null
+  #   project: cert-manager
+  #   source:
+  #     path: helm-charts/cert-manager
+  #     repoURL: git@github.com:paas2/cert-manager.git   
       # # apps can override the default extraSourceFields
       # #
       # extraSourceFields: |
