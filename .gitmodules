@@ -1,3 +1,3 @@
-[submodule "charts/argo-apps"]
-	path = charts/argo-apps
+[submodule "charts/argo-apps-base"]
+	path = charts/argo-apps-base
 	url = https://github.com/paas2/argo-apps-base
