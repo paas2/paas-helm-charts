@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   argo-apps-base:
   - apiVersion: v2
+    appVersion: 1.0.8
+    created: "2022-06-06T13:05:06.763762629Z"
+    description: Applications
+    digest: 011e933e3190fba78e7ddf5570d09803e13f1a1a29a199529719148d793b9aea
+    name: argo-apps-base
+    type: application
+    urls:
+    - https://github.com/paas2/paas-helm-charts/releases/download/argo-apps-base-1.0.8/argo-apps-base-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
     appVersion: 1.0.7
     created: "2022-06-06T12:56:42.221097087Z"
     description: Applications
@@ -71,4 +81,4 @@ entries:
     urls:
     - https://github.com/paas2/paas-helm-charts/releases/download/argo-apps-base-1.0.1/argo-apps-base-1.0.1.tgz
     version: 1.0.1
-generated: "2022-06-06T12:56:42.221254286Z"
+generated: "2022-06-06T13:05:06.764063331Z"
